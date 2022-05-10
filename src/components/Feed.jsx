@@ -22,7 +22,11 @@ const Feed = () => {
       {image.map((item) => (
         <Card sx={{ maxWidth: "100%", mb: "30px" }}>
           <CardHeader
-            avatar={<Avatar aria-label="recipe">R</Avatar>}
+            avatar={
+              <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
+                R
+              </Avatar>
+            }
             action={
               <IconButton aria-label="settings">
                 <MoreVert />
