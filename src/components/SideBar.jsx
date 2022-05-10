@@ -5,8 +5,10 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Divider,
+  Switch,
 } from "@mui/material";
-import { Home } from "@mui/icons-material";
+import { Home, ModeNight } from "@mui/icons-material";
 const SideBar = () => {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
@@ -43,6 +45,7 @@ const SideBar = () => {
           <ListItemText primary="HomePage" />
         </ListItemButton>
       </ListItem>
+      <Divider />
       <ListItem disablePadding>
         <ListItemButton component="a" href="#home">
           <ListItemIcon>
@@ -75,6 +78,7 @@ const SideBar = () => {
           <ListItemText primary="HomePage" />
         </ListItemButton>
       </ListItem>
+      <Divider />
       <ListItem disablePadding>
         <ListItemButton component="a" href="#home">
           <ListItemIcon>
@@ -102,9 +106,9 @@ const SideBar = () => {
       <ListItem disablePadding>
         <ListItemButton component="a" href="#home">
           <ListItemIcon>
-            <Home />
+            <ModeNight />
           </ListItemIcon>
-          <ListItemText primary="HomePage" />
+          <Switch />
         </ListItemButton>
       </ListItem>
     </Box>
