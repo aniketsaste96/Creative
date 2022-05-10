@@ -9,8 +9,10 @@ import {
   CardMedia,
   IconButton,
   Typography,
+  Checkbox,
 } from "@mui/material";
 import React from "react";
+import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 const image = [
   "https://images.unsplash.com/photo-1642566111338-089143626b77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80",
   "https://images.unsplash.com/photo-1652116759161-047b747091a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80",
@@ -33,9 +35,9 @@ const Feed = () => {
               </IconButton>
             }
             title="Gooderham Building at rainy day with the CN Tower in the background"
-            subheader="September 14, 2016"
+            subheader="jan 14, 2022"
           />
-          <CardMedia component="img" height="300" image={item} />
+          <CardMedia component="img" height="400px" image={item} />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
               This impressive paella is a perfect party dish and a fun meal to
@@ -44,9 +46,10 @@ const Feed = () => {
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
-              <Favorite />
-            </IconButton>
+            <Checkbox
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite sx={{ color: "red" }} />}
+            />
             <IconButton aria-label="share">
               <Share />
             </IconButton>
