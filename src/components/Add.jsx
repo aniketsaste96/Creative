@@ -38,10 +38,11 @@ const Add = () => {
   return (
     <>
       <Tooltip
-        title="Delete"
+        title="Add"
         sx={{
           position: "fixed",
-          bottom: 20,
+          bottom: 10,
+
           left: { xs: "calc(50%-25px)", md: 30 },
         }}
       >
