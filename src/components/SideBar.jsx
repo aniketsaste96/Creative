@@ -8,7 +8,19 @@ import {
   Divider,
   Switch,
 } from "@mui/material";
-import { Home, ModeNight } from "@mui/icons-material";
+import {
+  Home,
+  ModeNight,
+  MBackup,
+  Backup,
+  FormatQuote,
+  AddBusiness,
+  AutoGraph,
+  MeetingRoom,
+  ScheduleSend,
+  VideoSettings,
+  Group,
+} from "@mui/icons-material";
 const SideBar = ({ setMode }) => {
   const [checked, setChecked] = useState(false);
   const handleChange = (e) => {
@@ -30,67 +42,67 @@ const SideBar = ({ setMode }) => {
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
             <ListItemIcon>
-              <Home />
+              <VideoSettings />
             </ListItemIcon>
-            <ListItemText primary="HomePage" />
+            <ListItemText primary="Video Chat" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
             <ListItemIcon>
-              <Home />
+              <Group />
             </ListItemIcon>
-            <ListItemText primary="HomePage" />
+            <ListItemText primary="Create Group" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
             <ListItemIcon>
-              <Home />
+              <ScheduleSend />
             </ListItemIcon>
-            <ListItemText primary="HomePage" />
+            <ListItemText primary="Schedule Send" />
           </ListItemButton>
         </ListItem>
         <Divider />
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
             <ListItemIcon>
-              <Home />
+              <MeetingRoom />
             </ListItemIcon>
-            <ListItemText primary="HomePage" />
+            <ListItemText primary="Meeting Room" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
             <ListItemIcon>
-              <Home />
+              <AutoGraph />
             </ListItemIcon>
-            <ListItemText primary="HomePage" />
+            <ListItemText primary="Graph" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
             <ListItemIcon>
-              <Home />
+              <AddBusiness />
             </ListItemIcon>
-            <ListItemText primary="HomePage" />
+            <ListItemText primary="Business" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
             <ListItemIcon>
-              <Home />
+              <FormatQuote />
             </ListItemIcon>
-            <ListItemText primary="HomePage" />
+            <ListItemText primary="Quote" />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
           <ListItemButton component="a" href="#home">
             <ListItemIcon>
-              <Home />
+              <Backup />
             </ListItemIcon>
-            <ListItemText primary="HomePage" />
+            <ListItemText primary="Backup" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
