@@ -100,8 +100,8 @@ const RightBar = () => {
     <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed" width={300}>
         <Typography variant="h6">Online Friends</Typography>
-        <Divider mb="10px" />
-        <AvatarGroup max={6} total={10} ml={0}>
+        {/* <Divider m="5px" /> */}
+        <AvatarGroup max={6} total={10} m={2}>
           <StyledBadge
             overlap="circular"
             anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
