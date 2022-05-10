@@ -9,7 +9,7 @@ const RightBar = () => {
       p={2}
       sx={{ display: { xs: "none", sm: "block" } }}
     >
-      RightBar
+      <Box position="fixed"></Box>
     </Box>
   );
 };
