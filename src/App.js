@@ -24,7 +24,7 @@ function App() {
         <Add />
       </Paper>
     </ThemeProvider>
-
+//PAPER FOR DARK THEME
   )
 }
 
